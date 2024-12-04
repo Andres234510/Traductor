@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4f7db; /* Verde claro de fondo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+header {
+    background: #056b21; /* Verde oscuro */
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #ffffff; /* Texto blanco en el encabezado */
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #056b21; /* Verde oscuro */
+    margin-bottom: 1rem;
+}
+
+/* Contenedores */
+section {
+    background: #d8f3c8; /* Verde muy claro */
+    border: 1px solid #a8d5a0;
+    border-radius: 10px;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.translate, .dictionary, .add-word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Input y Select */
+input[type="text"], select {
+    width: 80%;
+    max-width: 400px;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #89c68a; /* Verde suave */
+    border-radius: 5px;
+    background-color: #f5fff5;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #056b21;
+    outline: none;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    background: #2a9d44; /* Verde medio */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #1e7a34; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #f5fff5; /* Fondo claro */
+}
+
+table th, table td {
+    border: 1px solid #89c68a; /* Verde suave */
+    padding: 0.8rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #a8d5a0; /* Verde intermedio */
+    color: #056b21; /* Texto verde oscuro */
+}
+
+table td {
+    color: #333;
+}
+
+/* Cuadro de traducción */
+.translation-box {
+    margin-top: 10px;
+    padding: 15px;
+    border: 2px solid #056b21; /* Verde oscuro */
+    border-radius: 5px;
+    background-color: #eff9ee; /* Verde muy claro */
+    font-size: 1.2em;
+    color: #056b21;
+    text-align: center;
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 0.8rem;
+    }
+
+    input[type="text"], select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
